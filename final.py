@@ -280,7 +280,7 @@ def recog():
             Id, conf = recognizer.predict(gray[y:y+h,x:x+w])
 #             print("Detected:"+"ID -"+str(Id))
             # confidence-> loss (lesser is better)
-            if(conf<60):
+            if(conf<70):
                 #match
                 match_flag=True
                 db=get()
@@ -320,11 +320,11 @@ def Face_Recog():
     main_frame_container=Frame(face_recog,bg='#B2EBF2')
     main_frame_container.pack(fill=BOTH,expand=True )
     
-    capb_img = Button(main_frame_container, text='CaptureImage',  
+    capb_img = Button(main_frame_container, text='Capture Image',  
                       command=capImg, width=15, bg="#FFF59D").pack()
-    trn_img = Button(main_frame_container, text='TrainImage',  
+    trn_img = Button(main_frame_container, text='Train Image',  
                      command=trn, width=15, bg="#FFF59D").pack()
-    rc_img = Button(main_frame_container, text='RecogniseImage',  
+    rc_img = Button(main_frame_container, text='RecogniZe Image',  
                     command=recog, width=15, bg="#FFF59D").pack()
 
 # class Notes:
