@@ -1,0 +1,5 @@
+Your ATM Details
+AccNo :-  XXXXXXX
+Password :- #######
+
+
